@@ -22,8 +22,3 @@ while choice.upper() != 'D':
     else:
         print("Invalid selection! Please choose A, B, C, or D.")
         
-def viewRec():
- file = open(filename, 'r')
- with open(filename, 'r') as read_file:
- print(read_file.read())
- read_file.close()

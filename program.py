@@ -22,3 +22,13 @@ while choice.upper() != 'D':
     else:
         print("Invalid selection! Please choose A, B, C, or D.")
         
+try:
+ filename = 'file1.txt'
+ file = open(filename, "x")
+ print(filename + " successfully created.")
+
+except:
+ print(filename + " already exists.")
+
+
+    

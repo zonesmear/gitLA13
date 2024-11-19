@@ -22,3 +22,7 @@ while choice.upper() != 'D':
     else:
         print("Invalid selection! Please choose A, B, C, or D.")
         
+def clearRec():
+ file = open(filename, 'w')
+ file.write("")
+ file.close()

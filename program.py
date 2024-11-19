@@ -22,3 +22,11 @@ while choice.upper() != 'D':
     else:
         print("Invalid selection! Please choose A, B, C, or D.")
         
+def addRec():
+    file = open(filename, 'r')
+    name = input("Enter Name: ")
+    email = input("Enter Email: ")
+    addr = input("Enter Address: ")
+    with open(filename, 'a') as file:
+        file.write(name + ", " + email + ", " + addr + "\n")
+    file.close()
